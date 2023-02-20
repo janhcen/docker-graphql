@@ -28,10 +28,12 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t jjancen/docker-graphql:0.0.2 .
+        docker build -t jjancen/docker-graphql:latest .
         
     - name: Docker Push Image
       run: |
         docker push jjancen/docker-graphql:0.0.2
+        docker push jjancen/docker-graphql:latest
 
 
 
