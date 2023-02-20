@@ -31,7 +31,7 @@ jobs:
         
     - name: Docker Push Image
       run: |
-        docker push -t jjancen/docker-graphql:0.0.2 .
+        docker push jjancen/docker-graphql:0.0.2
 
 
 
